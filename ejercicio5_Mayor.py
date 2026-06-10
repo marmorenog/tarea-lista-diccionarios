@@ -2,8 +2,11 @@
 numeros = []
 
 for x in range (8):
-    numero=int(input("Ingrese números: "))
-    numeros.append(numero)
+    try:
+        numero=int(input("Ingrese números: "))
+        numeros.append(numero)
+    except:
+        print("Error! Ingresar número entero")
 
 numeros.sort()
 
