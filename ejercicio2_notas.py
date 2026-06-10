@@ -4,10 +4,16 @@ notas = {
     "Juan" : 4.8,
     "Ana" : 7.0
 }
+while True:
+    for x in notas:
+        print("Nombres:",x)
 
-nombre=input("Ingrese nombre: ") .title()
+    nombre=input("Ingrese nombre: ") .title()
+    
+    if nombre in notas:
+        print("La notas es:", notas[nombre])
+        break
+    else:
+         print("El nombre no existe")
 
-if nombre in notas:
-    print("La notas es:", notas[nombre])
-else:
-    print("El nombre no existe")
+
