@@ -22,8 +22,10 @@ while True:
             estudiante=input("Ingrese el nombre de estudiante que busca: ").lower().strip()
             if estudiante in estudiantes:
                 print("Estudiante ingresado")
+                break
             else:
                 print("Estudiante no ingresado")
+                break
             
     elif opc=="3":
         while True:
@@ -37,6 +39,7 @@ while True:
     elif opc=="4":
         for estudiante in estudiantes:
             print("Lista de nombre de estudiantes: ",estudiante)
+            
     elif opc=="5":
         print("Adios, gracias por utilizar el programa!")
     else:
